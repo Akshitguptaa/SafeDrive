@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="./registration.css">
+  <script src="https://kit.fontawesome.com/137076d6dc.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="../public/logo.png" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <button onclick="goBack()" class="back-button">Go Back</button>
+  </header>
+
+  <div class="video-container">
+    <video class="video-background" src="../public/bg_cars.mp4" alt="background" autoplay loop muted
+      playsinline></video>
+  </div>
+
+  <div class="container">
+    <form action="#" method="post">
+      <h2>Register</h2>
+      <div class="input-group">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" required>
+      </div>
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="input-group">
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+      </div>
+      <div class="input-group">
+        <button type="submit" class="btn" id="sign_up_email">Register with Email</button>
+      </div>
+      <div class="or-separator">
+        <span>OR</span>
+      </div>
+      <div class="input-group">
+        <button type="button" class="btn" id="sign_up_google">Register with Google</button>
+      </div>
+    </form>
+    <div class="login-link">
+      <p>Already Registered? <a href="../login/login.html">Click here</a></p>
+    </div>
+  </div>
+
+  <script>
+    function goBack() {
+      window.location.href = '../index.html';
+    }
+  </script>
+  <script src="./registration.js" type="module"></script>
+</body>
+
+</html>

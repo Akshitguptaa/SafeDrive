@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1), rgba(36, 79, 89, 1), rgba(39, 72, 80, 1) 68%, rgba(35, 81, 92, 0.85), rgba(4, 143, 171, 1));
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    overflow-x: hidden;
+    position: relative;
+    overflow-y: auto;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main {
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.77;
+    background-repeat: no-repeat;
+    background-size: (1200px, 100vw);
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video-background {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.6);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    box-shadow: 0 2px 4px 0 rgba(7, 1, 1, 0.2);
+    justify-content: space-between;
+    padding: 10px 50px;
+    z-index: 100;
+    max-width: 100%;
+    margin: auto;
+
+}
+
+nav .logo {
+    height: 65px;
+    left: 20%;
+    cursor: pointer;
+}
+
+nav button {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: line;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav button:hover {
+    background-color: rgba(255, 255, 255, 0);
+    transform: scale(1.3, 1.3);
+}
+
+.title {
+    font-family: "Jersey 15", sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 82%;
+    transform: translate(-50%, -50%);
+    font-size: 7em;
+    font-weight: bold;
+    color: rgb(4, 42, 47);
+    text-shadow: 2px 2px 2px rgb(103, 203, 185);
+    z-index: 100;
+}
+
+/*  */
+.hero {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+.content1 {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    padding-top: 12px;
+    justify-content: space-between;
+
+}
+
+.sep {
+    height: 15px;
+}
+
+.img {
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    width: 30%;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 90%;
+    left: 0;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.secImg img {
+    width: 45vw;
+    margin: 56px;
+    border-radius: 24px;
+    filter: drop-shadow(8px 8px 16px rgba(0, 0, 0, 0.5));
+}
+
+.secImg {
+    position: relative;
+}
+
+.seperation {
+    height: 20px;
+}
+
+.secImg video {
+    width: 45vw;
+    margin: 56px;
+    border-radius: 24px;
+    filter: drop-shadow(8px 8px 16px rgba(0, 0, 0, 0.5));
+}
+
+div .footer {
+    max-width: 100%;
+}
+
+.first>div :nth-child(1) {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.first>div :nth-child(2) {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.heading1 h1 {
+    text-align: center;
+    position: relative;
+    top: 24px;
+    font-size: 48px;
+    text-shadow: 2px 2px 5px rgb(84, 94, 96);
+    margin: 48px;
+}
+
+.foot_content h2 {
+    font-weight: bold;
+    font-size: 16px;
+    word-spacing: 10%;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.foot_content a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    transition: color 0.3s linear;
+}
+
+.foot_content p {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+.foot_content {
+    padding: 30px 0 50px 0;
+    overflow-x: hidden;
+    display: flex;
+    background-color: white;
+    justify-content: space-evenly;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 3600;
+    border: none;
+}
+
+.footer-element {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.heading1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.heading1 h1 {
+    font-size: 48px;
+    color: white;
+    text-shadow: 2px 2px 5px rgb(84, 94, 96);
+}
+
+.faq {
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.faq h2 {
+    margin-top: 40px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.accordion {
+    margin: 60px auto;
+    width: 100%;
+    max-width: 900px;
+}
+
+.accordion li {
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.accordion li label:hover {
+    background-color: #605d5d;
+}
+
+.accordion li label {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    position: relative;
+    cursor: pointer;
+}
+
+label::after {
+    content: "+";
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+
+input[type='radio'] {
+    display: none;
+}
+
+.accordion .content {
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion input[type='radio']:checked+label+.content {
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.accordion input[type='radio']:checked+label::after {
+    transform: rotate(135deg);
+}
+

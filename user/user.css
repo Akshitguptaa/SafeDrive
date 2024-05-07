@@ -1,0 +1,228 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+}
+
+
+
+.btn {
+    padding: 10px 15px;
+    background-color: transparent;
+    border: 1px solid white;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    transition: transform 0.3s ease;
+    margin-right: 10px;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.social-head {
+    color: black;
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    color: black;
+}
+
+.location {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#findDetails {
+    float: left;
+    width: 100%;
+    background-color: rgb(39, 72, 80);
+    color: white;
+}
+
+body {
+    text-align: center;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: rgb(39, 72, 80);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.back-button {
+    background-color: transparent;
+    border: 1px solid white;
+    font-size: 20px;
+    padding: 10px 15px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    position: absolute;
+    font-weight: bolder;
+    top: 20px;
+    left: 20px;
+    box-shadow: 0 2px 4px 0 rgba(230, 227, 227, 0.2);
+}
+
+.back-button:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.table-box {
+    border: 1px solid white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.box {
+    border: 1px solid black;
+    padding: 16px;
+    text-align: center;
+    color: black;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    background-color: #fefefe;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.responsive-iframe {
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;
+    position: relative;
+}
+
+#mapIframe,
+#statIframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.close-btn-stat {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#statIframe{
+    border: 1px solid #cccccc; 
+    margin: 35px;
+    width:450px;
+    height:260px ;
+}
+
+.show-on-map {
+    padding: 8px 16px;
+    background-color: rgb(119, 127, 177);
+    border: 1px solid black;
+    color: black;
+    border-radius: 12px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    transition: transform 0.3s ease;
+}
+
+.foot_content h2 {
+    font-weight: bold;
+    font-size: 16px;
+    word-spacing: 10%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.foot_content a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    transition: color 0.3s linear;
+}
+
+.foot_content p {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+.foot_content {
+    padding: 30px 0 50px 0;
+    overflow-x: hidden;
+    display: flex;
+    background-color: white;
+    justify-content: space-evenly;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: calc(100vh - 150px);
+    border: none;
+}
+
+.footer-element {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

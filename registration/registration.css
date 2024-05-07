@@ -1,0 +1,120 @@
+@font-face {
+  font-family: 'Montserrat', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: rgb(39, 72, 80);
+}
+
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.social-head {
+  color: #333;
+}
+
+.back-button {
+  background-color: transparent;
+  border: 1px solid white;
+  font-size: 20px;
+  padding: 10px 15px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  position: absolute;
+  font-weight: bold;
+  top: 20px;
+  left: 20px;
+  box-shadow: 0 2px 4px 0 rgba(230, 227, 227, 0.2);
+}
+
+.back-button:hover {
+  transform: scale(1.2);
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.video-background {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.6);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+.btn {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.btn {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+#sign_up_email {
+  background-color: #28a745;
+}
+
+#sign_up_google {
+  background-color: #db4437;
+}
+
+.or-separator {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.or-separator span {
+  background-color: #fff;
+  padding: 0 10px;
+}

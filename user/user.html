@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+    <link rel="stylesheet" href="./user.css">
+    <script src="https://kit.fontawesome.com/137076d6dc.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../public/logo.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <header>
+        <button class="back-button" onclick="goBack()" class="back-button">Go Back</button>
+
+
+    </header>
+
+    <div id="findDetails">
+        <h1 style="padding: 45px;"><span id="welcomeMessage"></span></h1>
+        <div class="btns">
+            <button class="btn" id="loc">Fetch-Location</button>
+            <button class="btn" id="stat-data">Fetch-Statistics</button>
+        </div>
+        <table class="table-box">
+            <thead>
+                <tr class="box">
+                    <th class="box">Serial Number</th>
+                    <th class="box">Latitudes</th>
+                    <th class="box">Longitudes</th>
+                    <th class="box">Live Location</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+    </div>
+
+
+    <div id="mapModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="responsive-iframe">
+                <iframe id="mapIframe" width="600" height="450" frameborder="0" style="border:0;"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <div id="statModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn-stat">&times;</span>
+            <div class="responsive-iframe">
+                <iframe id="statIframe" 
+            src="https://thingspeak.com/channels/2502239/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Sleep+Analysis&type=line&xaxis=Time&yaxis=Sleep+Data"></iframe>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="foot_content">
+            <div class="footer-element">
+                <h2>SAFEDRIVE</h2>
+                <p>ALL RIGHTS RESERVED</p>
+                <p>© Copyright 2024</p>
+                <a href="#">Privacy Policy</a>
+            </div>
+
+            <div class="footer-element">
+                <h2>EMAIL</h2>
+                <div class="id">
+                    <a href="#">xyz@gmail.com</a>
+                </div>
+            </div>
+
+            <div class="footer-element">
+                <h2>MENU</h2>
+                <div class="menu_contents">
+                    <a href="#">ABOUT US</a>
+                    <a href="#">COURSES</a>
+                    <a href="#">CONTACTS</a>
+                </div>
+            </div>
+            <div class="footer-element">
+                <h2>SERVICES</h2>
+                <div class="footer-element">
+                    <a href="#">TERMS OF USE</a>
+                    <a href="#">REFUND & CANCELLATION</a>
+                </div>
+            </div>
+
+            <div class="footer-element">
+                <h2 class="social-head">OUR SOCIALS</h2>
+                <div class="social_img">
+                    <a href="#"><i class="fa-brands fa-linkedin fa-2x icon"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter fa-2x icon"></i></a>
+                    <a href="#"><i class="fa-brands fa-github fa-2x icon"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram fa-2x icon"></i></a>
+                    <a href="#"><i class="fa-regular fa-envelope fa-2x icon"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./script.js"></script>
+    <script type="module" src="./user.js"></script>
+</body>
+
+</html>

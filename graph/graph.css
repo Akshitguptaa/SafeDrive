@@ -1,0 +1,37 @@
+body {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(36, 79, 89, 1) 0%, rgba(39, 72, 80, 1) 68%, rgba(35, 81, 92, 0.85) 93%, rgba(4, 143, 171, 1) 100%);
+}
+
+.back-button {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    padding: 10px 15px;
+    color: white;
+    cursor: pointer;
+    font-family: Outfit;
+    transition: 0.3s;
+    position: absolute;
+    font-weight: bolder;
+    border: white 1px solid;
+    top: 20px;
+    left: 20px;
+    box-shadow: 0 2px 4px 0 rgba(14, 48, 69, 0.2);
+    transition: transform 0.3s ease;
+}
+
+#graph {
+    margin: 35px;
+    margin-top: 70px;
+    width: 450px;
+    height: 260px;
+}
+
+iframe {
+    margin: 50px;
+}
+
+.back-button:hover {
+    transform: scale(1.2);
+}
