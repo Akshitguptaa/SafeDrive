@@ -1,4 +1,5 @@
-# SafeDrive
+ 
+<h1>SafeDrive</h1>
 
 ## Drowsiness Detection System and Fleet Management Dashboard
 ### Overview
@@ -6,11 +7,11 @@
 This project combines an IoT-based drowsiness detection system with a Fleet Management Dashboard for comprehensive monitoring and control. The system utilizes facial landmarks and blink analysis to detect drowsiness, integrates an ESP32 model for wireless control, and includes additional hardware components for enhanced functionality.
 
 ## IoT Integration
-- ESP32 Model: Enables wireless control and monitoring of the drowsiness detection system.
-- GPS Tracker: Provides real-time vehicle location tracking.
-- GSM Module: Facilitates communication capabilities for the system.
-- Buzzer: Alerts the driver with sounds in case of drowsiness detection.
-- IR Sensor: Detects when the user is wearing glasses for additional context analysis.
+- `ESP32 Model`: Enables wireless control and monitoring of the drowsiness detection system.
+- `GPS Tracker`: Provides real-time vehicle location tracking.
+- `GSM Module`: Facilitates communication capabilities for the system.
+- `Buzzer`: Alerts the driver with sounds in case of drowsiness detection.
+- `IR Sensor`: Detects when the user is wearing glasses for additional context analysis.
 
 ## Fleet Management Dashboard
 - Access the dashboard by navigating to the provided URL after deployment.
@@ -25,12 +26,12 @@ This project combines an IoT-based drowsiness detection system with a Fleet Mana
 
 1. Clone this repository to your local machine. <br>
 2. Install the required dependencies: <br>
-a) OpenCV (pip install opencv-python) <br>
-b) NumPy (pip install numpy) <br>
-c) dlib (pip install dlib) <br>
-d) imutils (pip install imutils) <br>
-e) firebase-admin (pip install firebase-admin) <br>
-3. Download the shape_predictor_68_face_landmarks.dat file for facial landmark detection.<br>
+a) OpenCV (`pip install opencv-python`) <br>
+b) NumPy (`pip install numpy`) <br>
+c) dlib (`pip install dlib`) <br>
+d) imutils (`pip install imutils`) <br>
+e) firebase-admin (`pip install firebase-admin`) <br>
+3. Download the `shape_predictor_68_face_landmarks.dat` file for facial landmark detection.<br>
 
 ### File Structure
 - drowsiness_detection.py: Main script for drowsiness detection. <br>
