@@ -1,9 +1,9 @@
 # SafeDrive
 
-## Drowsiness Detection System
-### ML script
+## Drowsiness Detection System and Fleet Management Dashboard
+### Overview
 
-This project implements a drowsiness detection system using facial landmarks and blink analysis. The system detects whether a person is awake, drowsy, or asleep based on their facial movements, specifically analyzing blink patterns.
+This project implements a drowsiness detection system using facial landmarks and blink analysis. The system detects whether a person is awake, drowsy, or asleep based on their facial movements, specifically analyzing blink patterns. Additionally, it includes a dashboard for fleet managers to access live vehicle locations and analyze statistics related to the drowsiness detection system.
 
 ### Installation
 
@@ -27,3 +27,13 @@ The system categorizes the person's status into three categories:<br>
 Active: When the person is alert and active.<br>
 Drowsy: When the person shows signs of drowsiness based on blink patterns.<br>
 Sleeping: When the person is detected as sleeping due to prolonged drowsiness.<br>
+
+
+### Fleet Management Dashboard
+1. Access the dashboard by navigating to the provided URL after deployment. <br>
+2. The dashboard provides: <br>
+a) Live Vehicle Locations: View the real-time locations of fleet vehicles on a map. <br>
+b) Statistics Section: Analyze the following metrics:<br>
+a) Number of times the haptic mechanism was activated.<br>
+b) Number of times the user was active and alert.<br>
+c) Any additional relevant statistics for fleet management and drowsiness detection analysis.<br>
